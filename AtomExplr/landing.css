@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --background: linear-gradient(110deg, #000 -26.19%, #4A4A4A 111.31%);
+    --grad-1: linear-gradient(91deg, #222 -9.24%, #626262 106.46%);
+    --grad-2: linear-gradient(91deg, #5e5e5e -9.24%, #626262 106.46%);
+    --color-text: #CCC3C3;
+    --hv-color: #4A4A4A;
+    --white-lm: #fff;
+    --info-margin: rgb(255 255 255 / 50%);
+    --box-shadow: none;
+    ;
+  }
+  
+  .dark-theme {
+    --background: linear-gradient(110deg, #ffffff -26.19%, #878787 111.31%);
+    --grad-1: linear-gradient(91deg, #dedede -9.24%, #a6a6a6 106.46%);
+    --grad-2: linear-gradient(91deg, #b8b8b8 -9.24%, #a6a6a6 106.46%);
+    --color-text: #373434;
+    --hv-color: #bdbdbd;
+    --white-lm: #000000;
+    --info-margin: rgb(0 0 0 / 50%);
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  .nav_bar button {
+    text-align: center;
+    padding: 0;
+    border: none;
+  }
+  
+  .element img {
+    filter: var(--svg-color);
+  }
+  
+  .nav_bar,
+  .tab_div div:not(.element div, .name div, .model_panel div) {
+    box-shadow: var(--box-shadow);
+  }
+  body {
+    background: var(--background);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .model_panel div:not(#hydrogen) {
+    display: none;
+  }
+  
+  .hero_page {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #main_btn {
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    background-color: #00000000;
+    color: var(--white-lm);
+  }
+  
+  button {
+    border: solid 1.5px var(--color-text);
+    color: var(--color-text);
+    background-color: #ccc3c300;
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .dropdown-content :hover {
+    background: var(--color-text);
+    color: var(--hv-color);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--grad-1);
+    padding: 1rem;
+    z-index: 1;
+    border-radius: 16px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    /*display: grid;*/
+    grid-template-columns: 108px auto auto;
+    gap: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  .show {
+    display: grid;
+  }
+  
+  #myInput {
+    border-radius: 16px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    padding-left: 0.5rem;
+  }
+  
+  a,
+  h1,
+  h2,
+  p {
+    color: var(--white-lm);
+  }
+  
+  h2,
+  #amu,
+  #valency,
+  #valence_electrons {
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  #amu,
+  #valency,
+  #valence_electrons {
+    font-size: 1rem;
+  }
+  
+  .nav_bar h1 {
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .nav_bar {
+    width: 95%;
+    height: 12.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background: var(--grad-1);
+    z-index: 10;
+    position: fixed;
+    top: 4%;
+    border-radius: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  #element,
+  #element_symbol {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.325rem;
+  }
+  
+  .center1_div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  #center_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    align-content: center;
+    flex-wrap: wrap;
+    top: calc(10vh + 1rem);
+    z-index: 10;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  
+  i {
+    margin-right: 0.5rem;
+  }
+  
+  ul li a {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  ul li {
+    list-style: none;
+    margin-right: 2rem;
+  }
+  
+  .drop_down {
+    height: 1.75rem;
+  }
+  
+  .name,
+  .element,
+  .model_panel {
+    background: var(--grad-1);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    height: auto;
+    width: 46.5%;
+    margin-left: 2.5%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .model_panel {
+    padding: 1rem;
+  }
+  
+  .nav_bar ul {
+    display: none;
+  }
+  
+  .model_panel {
+    background: var(--grad-2);
+    position: absolute;
+    right: 2.5%;
+    top: 20vh;
+  }
+  
+  .model_panel {
+    bottom: 0;
+  }
+  
+  .model_panel div,
+  model-viewer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  model-viewer h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  
+  .element {
+    display: grid;
+    grid-template-columns: minmax(165px, 175px) minmax(165px, 175px) minmax(165px, 175px);
+    gap: 1rem;
+    grid-template-rows: auto 56px 56px 56px;
+    justify-content: center;
+  }
+  
+  .name {
+    display: flex;
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  
+  .element p:not(.isotopes p) {
+    color: var(--color-text);
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .element div:not(.isotopes, .eletron_arrangment, .valence_electrons) {
+    padding: 1rem;
+    border: 2px solid var(--info-margin);
+    border-radius: 16px;
+  }
+  .protons {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  
+  }
+  
+  .electrons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  .neutrons {
+    grid-column-start: 3;
+  }
+  
+  .amu {
+    grid-row-start: 2;
+  }
+  
+  .valency {
+    grid-row-start: 3;
+  }
+  
+  .valence_electrons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    grid-row-start: 4;
+    padding: 0.5rem;
+    border: 2px solid var(--info-margin);
+    border-radius: 16px;
+  }
+  
+  .element h2 {
+    border-bottom: 4px solid var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+  
+  .i1 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+  
+  .i2 {
+    grid-row-start: 4;
+    grid-column-start: 2;
+  }
+  
+  .i3 {
+    grid-row-start: 5;
+    grid-column-start: 2;
+  }
+  
+  .isotopes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .isotopes p {
+    color: var(--color-text);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .model_panel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+  
+  .eletron_arrangment {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  
+  .eletron_arrangment img {
+    margin-bottom: 1rem;
+  }
+  .slow-spin {
+    -webkit-animation: fa-spin 3s infinite linear;
+    animation: fa-spin 3s infinite linear;
+  }
+  .s1 {
+    font-weight: 500;
+  }
+  /*@media only screen and (min-height:704px) {
+    .model_panel{
+      height: 540px;
+    }*/
+  @media only screen and (max-width: 1200px) {
+    .element div:not(.isotopes, .eletron_arrangment) {
+      padding: 0;
+      border: none;
+      border-radius: 0;
+    }
+  
+    .model_panel {
+      bottom: 0;
+    }
+  
+    .model_panel div,
+    model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .element {
+      display: grid;
+      grid-template-columns: minmax(110px, 135px) minmax(110px, 135px) minmax(110px, 135px);
+      grid-template-rows: auto 35px 35px 35px;
+      text-align: center;
+      gap: 0.75rem;
+      align-items: center;
+    }
+  
+    .eletron_arrangment img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .i1,
+    .i2,
+    .i3 {
+      padding: 0.5rem;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 16px;
+    }
+  }
+  
+  @media only screen and (max-width:866px) {
+    .tab_div {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20vh;
+      align-items: center;
+    }
+  
+    model-viewer {
+      width: 100%;
+      height: 30vh;
+    }
+  
+    h1 {
+      font-weight: 500;
+      font-size: 1.125rem;
+    }
+  
+    .isotopes p {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+  
+    .name,
+    .element,
+    .model_panel {
+      width: 95%;
+      margin-left: 0px;
+    }
+  
+    .tab_div .name {
+      margin-top: 0px;
+    }
+  
+    .model_panel {
+      position: inherit;
+    }
+  
+    .eletron_arrangment img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media only screen and (max-width:405px) {
+    .s1 {
+      display: none;
+    }
+  
+    .element h2 {
+      border-bottom: none;
+      margin-bottom: 0rem;
+    }
+    .name,
+    .element {
+      padding: 0.5rem, 0.5rem;
+    }
+    .element {
+      gap: 0rem;
+      column-gap: 0.75rem;
+      row-gap: 1rem;
+      grid-template-columns: minmax(90px, 95px) minmax(90px, 95px) minmax(90px, 95px);
+    }
+  
+    .valence_electrons {
+      grid-row-end: 6;
+    }
+  
+    .eletron_arrangment img {
+      width: 100%;
+      height: 100%;
+    }
+  }

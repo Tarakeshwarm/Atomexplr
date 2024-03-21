@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AtomExplr, a captivating website done by Me, Mugilan, Ishita and Swastik, transcends science education by engaging users in an augmented reality(AR) exploration of the atomic world. It allows users to visualize and interact with atoms in a dynamic and engaging manner.">
+  <meta name="keywords" content="Atom 3d model, neil bohr, atomic model, 3d model atom, elements 3d model, atom information website">
+  <title>AtomExplr.</title>
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+<div class="hero_page">
+  <div class="main_panel">
+    <div class="center1_div">
+      <div class="nav_bar">
+        <a href="index.html">
+          <h1><i class="fa-thin fa-atom fa-lg slow-spin"></i>AtomExplr<span
+              style="font-weight: 400; font-size: 1rem; margin-left: 0.125rem; display: none;">.io</span></h1>
+        </a>
+        <a href="javascript:void(0);" class="menu" onclick="myFunction()" id="menu"><i
+            class="fa-regular fa-bars fa-lg"></i>
+        </a>
+        <ul>
+          <li><a href="#home_page"><i class="fa-solid fa-users"></i>About Us</a></li>
+        </ul>
+        <button onclick=model() id="button"><i class="fa-solid fa-sun-bright fa-lg"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="tab_div">
+    <div class="model_panel">
+      <div id="hydrogen">
+        <model-viewer src="models/Hydrogen.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" camera-controls autoplay>
+          <h1>Hydrogen...</h1>
+        </model-viewer>
+      </div>
+      <div id="helium">
+        <model-viewer src="models/Helium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale="1000 1000 1000" camera-controls autoplay>
+          <h1>Helium...</h1>
+        </model-viewer>
+      </div>
+      <div id="lithium">
+        <model-viewer src="models/Lithium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Lithium...</h1>
+        </model-viewer>
+      </div>
+      <div id="berrylium">
+        <model-viewer src="models/Berrylium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Berrylium...</h1>
+        </model-viewer>
+      </div>
+      <div id="boron">
+        <model-viewer src="models/Boron.glb" shadow-intensity="1" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" scale=" 1000 1000 1000" camera-controls
+          autoplay><h1>Boron...</h1></model-viewer>
+        
+      </div>
+      <div id="carbon">
+        <model-viewer src="models/Carbon.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls
+          autoplay><h1>Carbon...</h1></model-viewer>
+
+      </div>
+      <div id="nitrogen">
+        <model-viewer src="models/Nitrogen.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+           <h1>Nitrogen...</h1>
+        </model-viewer>
+      </div>
+      <div id="oxygen">
+        <model-viewer src="models/Oxygen.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Oxygen...</h1>
+        </model-viewer>
+      </div>
+      <div id="flourine">
+        <model-viewer src="models/Fluorine.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Flourine...</h1>
+        </model-viewer>
+      </div>
+      <div id="neon">
+        <model-viewer src="models/Neon.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Neon...</h1>
+        </model-viewer>
+      </div>
+      <div id="sodium">
+        <model-viewer src="models/Sodium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Sodium...</h1>
+        </model-viewer>
+      </div>
+      <div id="magnesium">
+        <model-viewer src="models/Magnesium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Magnesium</h1>
+        </model-viewer>
+      </div>
+      <div id="aluminium">
+        <model-viewer src="models/Aluminium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Aluminium...</h1>
+        </model-viewer>
+      </div>
+      <div id="silicon">
+        <model-viewer src="models/Silicon.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Silicon...</h1>
+        </model-viewer>
+      </div>
+      <div id="phosphorus">
+        <model-viewer src="models/Phosphorus.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Phosphorus...</h1>
+        </model-viewer>
+      </div>
+      <div id="sulphur">
+        <model-viewer src="models/Sulphur.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Sulphur...</h1>
+        </model-viewer>
+      </div>
+      <div id="chlorine">
+        <model-viewer src="models/Chlorine.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Chlorine...</h1>
+        </model-viewer>
+      </div>
+      <div id="argon">
+        <model-viewer src="models/Argon.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Argon...</h1>
+        </model-viewer>
+      </div>
+      <div id="potassium">
+        <model-viewer src="models/Pottassium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Potassium...</h1>
+        </model-viewer>
+      </div>
+      <div id="calcium">
+        <model-viewer src="models/Calcium.glb" ar ar-scale="0.1 0.1 0.1" shadow-intensity="1" scale="1 1 1" shadow-intensity="1" scale=" 1000 1000 1000" camera-controls autoplay>
+          <h1>Calcium...</h1>
+        </model-viewer>
+      </div>
+    </div>
+    <div class="name">
+      <h1>Element: <span id="element">Hydrogen</span>(<span id="element_symbol">H</span>)</h1>
+      <div class="dropdown">
+        <button onclick="myFunction()" id="main_btn"><i class="fa-solid fa-chevron-down fa-lg"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <button onclick="hydrogen()">Hydrogen</button>
+          <button onclick="helium()">Helium</button>
+          <button onclick="lithium()">Lithium</button>
+          <button onclick="beryllium()">Beryllium</button>
+          <button onclick="boron()">Boron</button>
+          <button onclick="carbon()">Carbon </button>
+          <button onclick="nitrogen()">Nitrogen</button>
+          <button onclick="oxygen()">Oxygen</button>
+          <button onclick="flourine()">Fluorine</button>
+          <button onclick="neon()">Neon</button>
+          <button onclick="sodium()">Sodium</button>
+          <button onclick="magnesium()">Magnesium</button>
+          <button onclick="aluminium()">Aluminium</button>
+          <button onclick="silicon()">Silicon</button>
+          <button onclick="phosphorus()">Phosphorus</button>
+          <button onclick="sulphur()">Sulphur</button>
+          <button onclick="chlorine()">Chlorine</button>
+          <button onclick="argon()">Argon</button>
+          <button onclick="potassium()">Potassium</button>
+          <button onclick="calcium()">Calcium</button>
+        </div>
+      </div>
+    </div>
+    <div class="element">
+      <div class="protons">
+        <h2 id="p">1</h2>
+        <p><span class="s1">No. of </span>Protons</p>
+      </div>
+      <div class="electrons">
+        <h2 id="e">1</h2>
+        <p><span class="s1">No. of </span>Electrons</p>
+      </div>
+      <div class="neutrons">
+        <h2 id="n">0</h2>
+        <p><span class="s1">No. of </span>Neutrons</p>
+      </div>
+      <div class="amu">
+        <p><strong>Atomic mass:</strong> <span id="amu">1u</span></p>
+      </div>
+      <div class="valency">
+        <p><strong>Valency:</strong> <span id="valency">1</span></p>
+      </div>
+      <div class="valence_electrons">
+        <p><strong>Valence Electrons:</strong> <span id="valence_electrons">1</span></p>
+      </div>
+      <div class="isotopes">
+        <p>Isotopes:</p>
+      </div>
+      <div class="i1">
+        <p id="i1">Protium</p>
+      </div>
+      <div class="i2">
+        <p id="i2">Deutrium</p>
+      </div>
+      <div class="i3">
+        <p id="i3">Tritium</p>
+      </div>
+      <div class="eletron_arrangment">
+        <img src="electron_arrangement/Hydrogen.svg" alt="" id="img">
+        <p>Arrangement of Electrons</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+.intro {
+    display: flex;
+    margin-top: 20vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    background: var(--grad-1);
+    z-index: 10;
+    border-radius: 16px;
+    padding: 20px;
+    opacity: 60px;
+    box-shadow: var(--box-shadow);
+  }
+ 
+  .intro_text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+ 
+  a,
+  h1,
+  h2,
+  p {
+    color: var(--white-lm);
+  }
+ 
+  .intro h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+ 
+  p1 {
+    /*font-size: 33px;    font-weight: 10px;*/
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--color-text);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+ 
+  .intro {
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+ 
+  .enter {
+    border: solid 1.5px var(--color-text);
+    color: var(--color-text);
+    background-color: #ccc3c300;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  button.enter:hover {
+    background: var(--color-text);
+    color: var(--hv-color);
+  }
+ 
+  p2 {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+ 
+  @media only screen and (max-width: 477px){  
+  .intro h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+    p1{
+      font-size: 1.5rem;
+    }
+    p2{
+      font-size: 1rem;
+    }
+  }
+ 
+ /*
+  @media only screen and (max-width: 866px) {
+    h2 {
+      font-size: 30px;
+    }
+ 
+    p1 {
+      font-size: 30px;
+      margin-left: 70px;
+    }
+ 
+    p2 {
+      font-size: 20px;
+    }
+ 
+    button.enter {
+      margin-left: 300px;
+    }
+ 
+  }
+ 
+ 
+ 
+  @media only screen and (max-width: 950px) {
+    h2 {
+      font-size: 20px;
+    }
+ 
+    p1 {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+ 
+    p2 {
+      font-size: 20px;
+    }
+ 
+    button.enter {
+      margin-left: 300px;
+    }
+ 
+  }
+ 
+  @media only screen and (max-width: 477px) {
+    h2 {
+      font-size: 20px;
+    }
+ 
+    p1 {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+ 
+    p2 {
+      font-size: 15px;
+    }
+ 
+    button.enter {
+      margin-left: 80px;
+    }
+ 
+  }
+ */
